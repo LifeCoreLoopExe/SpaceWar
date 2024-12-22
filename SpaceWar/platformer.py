@@ -98,25 +98,24 @@ def main():
     
     camera = Camera(camera_configure, total_level_width, total_level_height) 
     
-    while 1: # Основной цикл программы
-        timer.tick(60)
-        for e in pygame.event.get(): # Обрабатываем события
-            if e.type == QUIT:
-                raise SystemExit ; "QUIT"
-            if e.type == KEYDOWN and e.key == K_UP:
-                up = True
-            if e.type == KEYDOWN and e.key == K_LEFT:
-                left = True
-            if e.type == KEYDOWN and e.key == K_RIGHT:
-                right = True
+    #while 1: # Основной цикл программы
+    #    timer.tick(60)
+     #   for e in pygame.event.get(): # Обрабатываем события
+      #      if e.type == QUIT:
+       #         raise SystemExit ; "QUIT"
+        #    if e.type == KEYDOWN and e.key == K_DOWN:
+         # if e.type == KEYDOWN and e.key == K_LEFT:
+            #    left = True
+           # if e.type == KEYDOWN and e.key == K_RIGHT:
+          #      right = True
 
 
-            if e.type == KEYUP and e.key == K_UP:
-                up = False
-            if e.type == KEYUP and e.key == K_RIGHT:
-                right = False
-            if e.type == KEYUP and e.key == K_LEFT:
-                left = False
+           # if e.type == KEYUP and e.key == K_UP:
+             #   up = False
+            #if e.type == KEYUP and e.key == K_RIGHT:
+              #  right = False
+            #if e.type == KEYUP and e.key == K_LEFT:
+             #   left = False
 
         screen.blit(bg, (0,0))      # Каждую итерацию необходимо всё перерисовывать 
 
